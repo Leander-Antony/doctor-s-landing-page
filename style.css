@@ -339,8 +339,77 @@ body {
     margin: 20px auto;
     line-height: 1.8;
   }
+
+  
+  .membership-section {
+    background-color: #ffffff;
+    padding: 80px 60px;
+    text-align: center;
+    color: #5B8291;
+  }
+  
+  .membership-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block; /* Ensures the underline is applied correctly */
+    border-bottom: 3px solid #98DAD9; /* Adds an underline with the desired color */
+    padding-bottom: 8px; /* Adds some space between the text and the underline */
+  }
+  
+  
+  .membership-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Space between each column */
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .membership-column {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .membership-column p,
+  .membership-bottom p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2.4;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px; /* space between p tags */
+  }
+  
+  .membership-column p::before,
+  .membership-bottom p::before {
+    color: #5B8291;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  .membership-bottom {
+    grid-column: span 3; /* Makes the bottom item span across all 3 columns */
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .map-section {
+    background-color: #f9f9f9; /* Light background for the section */
+  }
   
 
+  
+  .map-section iframe {
+    width: 100%; /* Make the map responsive */
+    height: 600px;
+    border: none; /* Remove border from iframe */
+  }
+  
 
 
 
