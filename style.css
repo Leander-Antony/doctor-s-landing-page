@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #2E424D;
 }
 
@@ -175,3 +175,136 @@ body {
     align-items: center; 
 }
 
+.baby-section {
+    display: flex;
+    height: 90vh;
+    justify-content: space-between;
+    padding: 120px 100px 80px;
+    background-image: url('images/baby.jpg'); /* Adjust the path as needed */
+    background-size: cover; /* Ensure the background image fully covers the section */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #2E424D;
+}
+
+.baby-left, .baby-right {
+    padding-top: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 100px; /* Adjust the size of the icons as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.cases-text, .countries-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.baby-left .cases-text {
+    font-size: 32px;
+    color: #2E424D;
+}
+
+.baby-right .countries-text {
+    font-size: 32px;
+    color: #2E424D;
+}
+
+.expertise-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 70px;
+    background-color: #f4f4f4;
+    color: #5B8291;
+}
+
+.expertise-left {
+    padding-top: 30px;
+    padding-left: 75px;
+    flex: 1.3;
+}
+
+.expertise-pfp {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    outline: 4px solid #98DAD9;
+    outline-offset: 6px;
+}
+
+.expertise-right {
+    flex: 2;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.expertise-list {
+    list-style-type: none;  /* Removes default bullet points */
+    padding-left: 0;  /* Removes the default padding for the list */
+}
+
+.expertise-list li {
+    color: #5B8291;
+    position: relative;
+    margin-bottom: 15px;  /* Space between each item */
+    padding-left: 25px;  /* Adds space for the tick mark */
+}
+
+.expertise-list li::before {
+    content: '\2713'; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px; 
+    color: #98DAD9;  
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px;
+    background-color: #D9D9D9;  
+}
+
+.contact-left {
+    flex: 2;
+    font-size: 24px;
+    color: #5B8291;  
+}
+
+.contact-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #2E424D;  
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #3B525F;  
+}
+
+.emergency-text {
+    line-height: 1.5;
+}
