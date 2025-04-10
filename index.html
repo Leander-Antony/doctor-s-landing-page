@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Doctor Header</title>
+  <title>Dr.H.Vijay Harikrishnan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,10 +17,10 @@
       </div>
     </div>
     <nav class="nav-links">
-      <a href="#" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   <div class="hero">
@@ -29,24 +29,24 @@
   <!-- Floating Cards Section -->
   <section class="floating-cards">
     <div class="card">
-      <h4>Thanaraj Speciality Hospitals</h4>
+      <p>Thanaraj Speciality Hospitals</p>
       <p>9, Chidambaranagar, Thoothukudi - 628008.</p>
-      <button class="card-btn">Contact Us →</button>
+      <button class="card-btn"><a href="#contact">Contact Us →</a></button>
     </div>
     <div class="card">
-      <h4>Schedule an Appointment</h4>
+      <p>Schedule an Appointment</p>
       <p>Thanaraj Speciality Hospitals</p>
       <p><strong>Mon - Sat:</strong> 5:30 PM - 9:00 PM</p>
-      <button class="card-btn">Book Appointment</button>
+      <button class="card-btn"><a href="#appointment">Book Appointment</a></button>
     </div>
     <div class="card">
-      <h4>Thanaraj Speciality Hospitals</h4>
+      <p>Thanaraj Speciality Hospitals</p>
       <p>9, Chidambaranagar,<br>Thoothukudi - 628008.</p>
       <p><strong>📞 99945 30003</strong></p>
     </div>
   </section>
 
-  <section class="about-doctor">
+  <section class="about-doctor" id="about">
     <div class="about-left">
       <h2>DR.<br>Vijay Harikrishnan</h2>
       <p>MBBS., MRCPCH.,<br>FRCPCH.,</p>
@@ -79,8 +79,8 @@
         <img src="images/world.svg" alt="World" class="icon" />
         <p class="countries-text">3<br>Countries</p>
     </div>
-</section>
-<section class="expertise-section">
+  </section>
+  <section class="expertise-section" id="services">
     <div class="expertise-left">
       <img class="expertise-pfp" src="images/pfp.jpg" alt="Dr. Vijay Harikrishnan">
     </div>
@@ -103,12 +103,12 @@
       </ul>
     </div>
   </section>
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <div class="contact-left">
       <p class="emergency-text">In case of EMERGENCY, call <strong>+91 9994530003</strong></p>
     </div>
     <div class="contact-right">
-      <a href="mailto:contact@example.com" class="contact-button">Or Send us a message →</a>
+      <a href="mailto:vjey79@gmail.com" class="contact-button">Or Send us a message →</a>
     </div>
   </section>
   <section class="why-choose-section">
@@ -145,10 +145,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.9074851085184!2d78.1335982!3d8.7947621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03efd50f37263b%3A0xaefadf92d322c431!2sThe%20Thanaraj%20Speciality%20Hospital!5e0!3m2!1sen!2sin!4v1744268381674!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
   
-  
-  
-
-
   <footer class="footer-section">
     <div class="footer-top">
       <div class="footer-box">
@@ -157,33 +153,37 @@
       </div>
       <div class="footer-box">
         <h4>Get in Touch</h4>
-        <p>📍 9,chidambaranagar, Thoothukudi-628008.</p>
+        <p>📍 9, Chidambaranagar, Thoothukudi-628008.</p>
         <p>📧 vjey79@gmail.com</p>
         <p>📞 +91 9994530003</p>
       </div>
-      <div class="footer-box">
-        <h4>Additional Link</h4>
-        <ul>
-          <li><a href="#">› Core Clinic</a></li>
-          <li><a href="#">› Service</a></li>
-          <li><a href="#">› About</a></li>
-          <li><a href="#">› Contact</a></li>
-        </ul>
+    </div>
+  
+    <div class="footer-bottom" id="appointment">
+        <h4>Schedule An Appointment</h4>
+        <form class="appointment-form" id="appointment-form" action="javascript:void(0);">
+          <div class="grid-container">
+            <div class="grid-item">
+              <input type="text" id="first-name" placeholder="First Name" required>
+            </div>
+            <div class="grid-item">
+              <input type="text" id="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="grid-item">
+              <input type="text" id="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="grid-item">
+              <input type="email" id="email" placeholder="Email" required>
+            </div>
+          </div>
+          <br>
+          <button type="submit">Submit →</button>
+        </form>
+        <div id="form-feedback" style="display: none;"></div>
       </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <h4>Scheduled An Appointment</h4>
-      <form class="appointment-form">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="Phone Number">
-        <input type="email" placeholder="Email">
-        <button type="submit">Submit →</button>
-      </form>
-    </div>
+      
+      
   </footer>
-  
 
   <script src="script.js"></script>
 </body>
