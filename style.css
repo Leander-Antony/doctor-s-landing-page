@@ -76,7 +76,7 @@ body {
 .about-doctor {
     display: flex;
     justify-content: space-between;
-    padding: 180px 10px 60px;
+    padding: 220px 10px 60px;
     background-color: white;
     color: #5B8291;
     gap: 40px;
@@ -147,7 +147,6 @@ body {
     background-color: #d3d3d3;
 }
 
-/* Responsive design for mobile */
 @media screen and (max-width: 768px) {
     .floating-cards {
     display: none; 
@@ -185,7 +184,7 @@ body {
 
 .baby-section {
     display: flex;
-    height: 90vh;
+    height: 70vh;
     justify-content: space-between;
     padding: 120px 100px 80px;
     background-image: url('images/baby.jpg');

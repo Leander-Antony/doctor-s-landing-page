@@ -146,6 +146,28 @@
   </section>
   
   <footer class="footer-section">
+    <div class="footer-bottom" id="appointment">
+      <h4>Schedule An Appointment</h4>
+      <form class="appointment-form" id="appointment-form" action="javascript:void(0);">
+        <div class="grid-container">
+          <div class="grid-item">
+            <input type="text" id="first-name" placeholder="First Name" required>
+          </div>
+          <div class="grid-item">
+            <input type="text" id="last-name" placeholder="Last Name" required>
+          </div>
+          <div class="grid-item">
+            <input type="text" id="phone" placeholder="Phone Number" required>
+          </div>
+          <div class="grid-item">
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+        </div>
+        <br>
+        <button type="submit">Submit →</button>
+      </form>
+      <div id="form-feedback" style="display: none;"></div>
+    </div>
     <div class="footer-top">
       <div class="footer-box">
         <h4>About us</h4>
@@ -159,28 +181,7 @@
       </div>
     </div>
   
-    <div class="footer-bottom" id="appointment">
-        <h4>Schedule An Appointment</h4>
-        <form class="appointment-form" id="appointment-form" action="javascript:void(0);">
-          <div class="grid-container">
-            <div class="grid-item">
-              <input type="text" id="first-name" placeholder="First Name" required>
-            </div>
-            <div class="grid-item">
-              <input type="text" id="last-name" placeholder="Last Name" required>
-            </div>
-            <div class="grid-item">
-              <input type="text" id="phone" placeholder="Phone Number" required>
-            </div>
-            <div class="grid-item">
-              <input type="email" id="email" placeholder="Email" required>
-            </div>
-          </div>
-          <br>
-          <button type="submit">Submit →</button>
-        </form>
-        <div id="form-feedback" style="display: none;"></div>
-      </div>
+    
       
       
   </footer>
