@@ -575,19 +575,23 @@ body {
 
     .about-doctor {
         flex-direction: column;
+        padding: 10px 50px 10px;
         align-items: center;
     }
 
     .about-left {
-        width: 40%;
-        font-size: 26px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
         font-weight: bold;
         line-height: 1.6;
     }
     
     .about-right {
-        width: 60%;
-        font-size: 16px;
+        width: 100%;
+        font-size: 14px;
         line-height: 1.8;
     }
 
@@ -599,16 +603,51 @@ body {
     }
 
     .small-section {
-        flex-direction: column;
+        flex-direction: row;
         padding: 20px;
+        gap: 20px;
+    }
+
+    .small-left{
+        font-size: 20px;
+    }
+
+    .small-right{
+        font-size: 18px;
+        flex: 1.5;
+    }
+    .big {
+        font-weight: bold;
+        font-size: 24px;
     }
 
     .baby-section {
-        flex-direction: column;
-        padding: 60px 40px;
-        height: auto;
+        display: flex;
+        height: 50vh;
+        gap: 30px;
     }
 
+    .baby-left,
+    .baby-right {
+    padding-top: 200px;
+    }
+
+    .icon {
+        width: 50px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .baby-left .cases-text {
+        font-size: 24px;
+        color: #2E424D;
+    }
+    
+    .baby-right .countries-text {
+        font-size: 24px;
+        color: #2E424D;
+    }
+    
     .expertise-section {
         flex-direction: column;
         padding: 40px 20px;
