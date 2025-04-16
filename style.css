@@ -196,7 +196,7 @@ body {
 
 .baby-left,
 .baby-right {
-    padding-top: 300px;
+    padding-top: 250px;
     flex: 1;
     display: flex;
     flex-direction: column;
