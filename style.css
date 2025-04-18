@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +7,10 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #2E424D;
+    background-color: #e6e6e6;
 }
 
+/* Header Section */
 .header {
     display: flex;
     background-color: white;
@@ -65,6 +67,7 @@ body {
     background-color: #e6e6e6;
 }
 
+/* Hero Section */
 .hero {
     height: 90vh;
     background-image: url('images/hero.jpeg');
@@ -73,6 +76,7 @@ body {
     background-size: cover;
 }
 
+/* About Section */
 .about-doctor {
     display: flex;
     justify-content: space-between;
@@ -95,7 +99,7 @@ body {
     line-height: 1.8;
 }
 
-
+/* Floating Cards */
 .floating-cards {
     display: flex;
     position: absolute;
@@ -108,21 +112,22 @@ body {
     gap: 10px;
     z-index: 1;
     flex-wrap: wrap; /* Allow wrapping of cards */
+
 }
 
 .floating-cards a {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .card {
     background-color: #24424E;
     border: 2px solid white;
     padding: 20px;
-    outline: #98DAD9;
-    width: 260px; /* Fixed width for cards */
+    width: 260px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    
 }
 
 .card p {
@@ -145,14 +150,10 @@ body {
 
 .card-btn:hover {
     background-color: #d3d3d3;
+   
 }
 
-@media screen and (max-width: 768px) {
-    .floating-cards {
-    display: none; 
-    }
-}
-
+/* Small Section */
 .small-section {
     display: flex;
     justify-content: space-between;
@@ -173,7 +174,8 @@ body {
 }
 
 .small-right {
-    color: white;
+
+    color: #324d56;
     text-align: left;
     flex: 2;
     font-size: 32px;
@@ -182,6 +184,7 @@ body {
     align-items: center;
 }
 
+/* Baby Section */
 .baby-section {
     display: flex;
     height: 70vh;
@@ -213,8 +216,9 @@ body {
 
 .cases-text,
 .countries-text {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
+    color: #2E424D;
 }
 
 .baby-left .cases-text {
@@ -264,7 +268,7 @@ body {
 .expertise-list li {
     color: #5B8291;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding-left: 25px;
 }
 
@@ -273,7 +277,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 24px;
+    font-size: 16px;
     color: #98DAD9;
 }
 
@@ -287,7 +291,7 @@ body {
 
 .contact-left {
     flex: 2;
-    font-size: 24px;
+    font-size: 18px;
     color: #5B8291;
 }
 
@@ -327,7 +331,7 @@ body {
 }
 
 .why-title {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     position: relative;
@@ -345,7 +349,7 @@ body {
 
 .why-para {
     padding-top: 30px;
-    font-size: 18px;
+    font-size: 15px;
     max-width: 900px;
     margin: 20px auto;
     line-height: 1.8;
@@ -361,9 +365,9 @@ body {
 }
 
 .membership-title {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     position: relative;
     display: inline-block;
     border-bottom: 3px solid #98DAD9;
@@ -389,7 +393,7 @@ body {
 .membership-column p,
 .membership-bottom p {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 2.4;
     position: relative;
     padding-left: 24px;
@@ -500,7 +504,7 @@ body {
     flex-direction: column;
     gap: 15px;
     text-align: left;
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
     padding: 20px;
     background-color: #1F1F1F;
@@ -653,6 +657,16 @@ body {
         padding: 40px 20px;
     }
 
+    .expertise-right {
+        font-size: 16px; /* Smaller on mobile */
+        line-height: 1.6;
+    }
+    
+    .expertise-list li {
+        font-size: 14px; /* Smaller on mobile */
+        margin-bottom: 10px;
+    }
+
     .contact-section {
         flex-direction: column;
         padding: 20px;
@@ -668,5 +682,17 @@ body {
 
     .mobile-nav {
         display: block;
+    }
+
+    .floating-cards {
+        position: relative;
+        top: auto;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
