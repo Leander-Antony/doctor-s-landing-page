@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr.H.Vijay Harikrishnan</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
   <header class="header">
@@ -23,9 +23,9 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  <div class="hero">
-  </div>
-  
+
+  <div class="hero"></div>
+
   <!-- Floating Cards Section -->
   <section class="floating-cards">
     <div class="card">
@@ -62,32 +62,35 @@
       </p>
     </div>
   </section>
+
   <section class="small-section">
     <div class="small-left">
-      <p>Over a decade of<br>experience as a<br><span class="big">Paediatric.</span></p>
+      <p>Over a decade of<br>experience in<br><span class="big">Paediatrics & Neonatology.</span></p>
+
     </div>
     <div class="small-right">
       <p>Experience best-in-class consultation <br>& treatment plans</p>
     </div>
   </section>
+
   <section class="baby-section">
     <div class="baby-left">
-        <img src="images/people.svg" alt="People" class="icon" />
+        <img src="{{ url_for('static', filename='images/people.svg') }}" alt="People" class="icon" />
         <p class="cases-text">15,000+<br>cases</p>
     </div>
     <div class="baby-right">
-        <img src="images/world.svg" alt="World" class="icon" />
+        <img src="{{ url_for('static', filename='images/world.svg') }}" alt="World" class="icon" />
         <p class="countries-text">3<br>Countries</p>
     </div>
   </section>
+
   <section class="expertise-section" id="services">
     <div class="expertise-left">
-      <img class="expertise-pfp" src="images/pfp.jpg" alt="Dr. Vijay Harikrishnan">
+      <img class="expertise-pfp" src="{{ url_for('static', filename='images/pfp.jpg') }}" alt="Dr. Vijay Harikrishnan">
     </div>
     <div class="expertise-right">
       <h2>Areas of Expertise</h2>
       <br>
-
       <p>14 years of global experience and clinical excellence make Dr. Vijay Harikrishnan a trusted name in paediatric and neonatal care across Hyderabad.</p>
       <ul class="expertise-list">
         <li>Paediatric Allergy and Nutritional specialist</li>
@@ -103,6 +106,7 @@
       </ul>
     </div>
   </section>
+
   <section class="contact-section" id="contact">
     <div class="contact-left">
       <p class="emergency-text">In case of EMERGENCY, call <strong>+91 9994530003</strong></p>
@@ -111,6 +115,7 @@
       <a href="mailto:vjey79@gmail.com" class="contact-button">Or Send us a message →</a>
     </div>
   </section>
+
   <section class="why-choose-section">
     <h2 class="why-title">Why Choose Dr. Vijay Harikrishnan</h2>
     <p class="why-para">
@@ -123,6 +128,7 @@
       emergency resuscitation, allergy management, and autism assessment—making him a trusted choice for comprehensive child healthcare.
     </p>
   </section>
+
   <section class="membership-section">
     <h2 class="membership-title">Professional Membership</h2>
     <div class="membership-container">
@@ -141,10 +147,11 @@
       <p>British Society for Allergy & Clinical Immunology, UK</p>
     </div>
   </section>
+
   <section class="map-section">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.9074851085184!2d78.1335982!3d8.7947621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03efd50f37263b%3A0xaefadf92d322c431!2sThe%20Thanaraj%20Speciality%20Hospital!5e0!3m2!1sen!2sin!4v1744268381674!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.9074851085184!2d78.1335982!3d8.7947621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03efd50f37263b%3A0xaefadf92d322c431!2sThe%20Thanaraj%20Speciality%20Hospital!5e0!3m2!1sen!2sin!4v1744268381674!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
-  
+
   <footer class="footer-section">
     <div class="footer-bottom" id="appointment">
       <h4>Schedule An Appointment</h4>
@@ -185,7 +192,5 @@
       
       
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
