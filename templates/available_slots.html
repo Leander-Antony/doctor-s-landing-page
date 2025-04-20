@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available Time Slots</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .slot-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .slot-item {
+      background-color: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      text-align: center;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .slot-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .available {
+      background-color: #4CAF50;
+      color: #fff;
+      border-color: #45a049;
+    }
+
+    .booked {
+      background-color: #f44336;
+      color: #fff;
+      border-color: #f41c1c;
+    }
+
+    .slot-item span {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Time Slots for {{ date }}</h1>
+
+  <div class="container">
+    {% if available_slots %}
+      <div class="slot-list">
+        {% for slot in available_slots %}
+          <div class="slot-item {% if 'Available' in slot %}available{% else %}booked{% endif %}">
+            {{ slot.split(":")[0] }}
+            <span>{{ slot.split(":")[1] }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No available slots for this date.</p>
+    {% endif %}
+  </div>
+</body>
+</html>

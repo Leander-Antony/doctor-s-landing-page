@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointments</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h2>All Appointments</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Reason</th>
+        <th>Date</th>
+        <th>Time Slot</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for appt in appointments %}
+      <tr>
+        <td>{{ appt.id }}</td>
+        <td>{{ appt.name }}</td>
+        <td>{{ appt.age }}</td>
+        <td>{{ appt.gender }}</td>
+        <td>{{ appt.phone }}</td>
+        <td>{{ appt.email }}</td>
+        <td>{{ appt.reason }}</td>
+        <td>{{ appt.date }}</td>
+        <td>{{ appt.time_slot }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a href="/" class="back-btn">← Back to Home</a>
+</body>
+</html>
